@@ -11,16 +11,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 080080dbdd558734e9a192a8f10317c5
-  - enabled: 1
-    path: Assets/Scenes/MainGame.unity
+  - enabled: 0
+    path: Assets/Scenes/Unused scenes/random generated scene.unity
     guid: 4188920215938474c88ab21297141889
-  - enabled: 1
-    path: Assets/Scenes/Task 2.unity
+  - enabled: 0
+    path: Assets/Scenes/Unused scenes/Task 2.unity
     guid: 51a18a90366143a45aa84a7a200509bc
-  - enabled: 1
-    path: Assets/Scenes/Task 3.unity
+  - enabled: 0
+    path: Assets/Scenes/Unused scenes/Task 3.unity
     guid: f8bd32a1ec04627428d3c5b75f31baa0
   - enabled: 1
-    path: Assets/Scenes/Task 4.unity
+    path: Assets/Scenes/MainGame.unity
     guid: 29d4489f03c675843a1392c30a3a2960
   m_configObjects: {}

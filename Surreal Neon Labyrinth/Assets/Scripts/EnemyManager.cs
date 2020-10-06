@@ -12,7 +12,6 @@ public class EnemyManager : MonoBehaviour
     public int numberOfEnemies;
 
     public bool IsKeyDropped = false;
-    public bool IsTest;
 
     void Start()
     {
@@ -22,24 +21,13 @@ public class EnemyManager : MonoBehaviour
 
     private void SpawnEnemies()
     {
-        if (!IsTest)
+        Enemies = new List<GameObject>();
+        for(int i = 0; i < numberOfEnemies; i++)
         {
-            Enemies = new List<GameObject>();
-            for(int i = 0; i < numberOfEnemies; i++)
-            {
-                var e = Instantiate(EnemyPrefab, GetSpawnPosition(), Quaternion.identity);
-                Enemies.Add(e);
-            }
+            var e = Instantiate(EnemyPrefab, GetSpawnPosition(), Quaternion.identity);
+            Enemies.Add(e);
         }
-        else
-        {
-            Enemies = new List<GameObject>();
-            var e = GameObject.FindGameObjectsWithTag("Enemy");
-            foreach(GameObject go in e)
-            {
-                Enemies.Add(go);
-            }
-        }
+      
     }
 
     private Vector3 GetSpawnPosition()

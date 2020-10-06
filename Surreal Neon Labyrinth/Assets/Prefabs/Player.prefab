@@ -254,7 +254,6 @@ MonoBehaviour:
   hasKey: 0
   dead: {fileID: 8300000, guid: 531867e1868f66c42b9a28387726fb75, type: 3}
   win: {fileID: 8300000, guid: 79f88b6f5745ca9408ef39a9c42776c9, type: 3}
-  IsTest: 0
   exitOpened: {fileID: 2100000, guid: 40621d54ab44cc64aa3c8a25a444cdc0, type: 2}
 --- !u!82 &724541024564958411
 AudioSource:
@@ -394,14 +393,14 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 0.67105734, g: 0.9668732, b: 0.9811321, a: 1}
-  m_Intensity: 1.25
-  m_Range: 10
-  m_SpotAngle: 50
-  m_InnerSpotAngle: 37.05804
+  m_Color: {r: 0.67058825, g: 0.98039216, b: 0.6867084, a: 1}
+  m_Intensity: 1
+  m_Range: 20
+  m_SpotAngle: 60
+  m_InnerSpotAngle: 6
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -434,7 +433,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1

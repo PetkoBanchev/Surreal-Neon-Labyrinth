@@ -20,11 +20,8 @@ public class MazeManager : MonoBehaviour
 
     [SerializeField]
     private GameObject PlayerPrefab;
-    public bool IsTest;
-    //[SerializeField]
-    //private MazeGenerator mazeGenerator;
-    //[SerializeField]
-    //private EnemyManager enemyManager;
+    [SerializeField]
+    private EnemyManager enemyManager;
 
     // Start is called before the first frame update
     private void Awake()
@@ -60,10 +57,9 @@ public class MazeManager : MonoBehaviour
             }  
         }
         PopulateNodeLists();
-        if (!IsTest)
-        {
-            Instantiate(PlayerPrefab, new Vector3(0,1,0), Quaternion.identity);
-        }
+        
+        Instantiate(PlayerPrefab, new Vector3(0,1,0), Quaternion.identity);
+        
     }
 
     private void PopulateNodeLists()

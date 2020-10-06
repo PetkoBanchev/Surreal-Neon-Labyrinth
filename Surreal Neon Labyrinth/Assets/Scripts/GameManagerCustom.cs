@@ -13,4 +13,14 @@ public class GameManagerCustom : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
+
+    public void PauseGame()
+    {
+        Time.timeScale = 0;
+    }
+
+    public void ResumeGame()
+    {
+        Time.timeScale = 1;
+    }
 }

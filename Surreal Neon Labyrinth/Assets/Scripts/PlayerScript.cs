@@ -7,6 +7,9 @@ public class PlayerScript : MonoBehaviour
 {
     public CharacterController Controller;
     public MazeManager MazeManager;
+    public GameManagerCustom GMC;
+
+
 
     public float speed = 5f;
     public float gravity = 9.8f;
@@ -25,7 +28,6 @@ public class PlayerScript : MonoBehaviour
     public AudioClip dead;
     public AudioClip win;
 
-    public bool IsTest;
     public Material exitOpened;
     // Start is called before the first frame update
     void Start()
@@ -107,14 +109,7 @@ public class PlayerScript : MonoBehaviour
         if (other.tag == "Key")
         {
             hasKey = true;
-            if (!IsTest)
-            {
-                GameObject.FindObjectOfType<MazeGenerator>().ChangeExitMaterial();
-            }
-            else
-            {
-                GameObject.FindGameObjectWithTag("Exit").GetComponent<MeshRenderer>().material = exitOpened;
-            }
+            GameObject.FindObjectOfType<MazeGenerator>().ChangeExitMaterial();
             Destroy(other.gameObject);
         }
         if (other.tag == "Exit" && hasKey)

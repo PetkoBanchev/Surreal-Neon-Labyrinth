@@ -15,18 +15,6 @@ public class MenuController : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
-    public void PlayGame2()
-    {
-        SceneManager.LoadScene(2);
-    }
-    public void PlayGame3()
-    {
-        SceneManager.LoadScene(3);
-    }
-    public void PlayGame4()
-    {
-        SceneManager.LoadScene(4);
-    }
     public void ExitGame()
     {
         Application.Quit();
