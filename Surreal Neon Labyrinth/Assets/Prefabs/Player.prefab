@@ -190,6 +190,8 @@ GameObject:
   - component: {fileID: 3311268242657648640}
   - component: {fileID: 3311268242657648641}
   - component: {fileID: 724541024564958411}
+  - component: {fileID: 2573073459345644431}
+  - component: {fileID: 2141645777786817482}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -227,7 +229,7 @@ CharacterController:
   m_Height: 2
   m_Radius: 0.48
   m_SlopeLimit: 45
-  m_StepOffset: 1
+  m_StepOffset: 0.3
   m_SkinWidth: 0.0001
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
@@ -245,6 +247,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Controller: {fileID: 3311268242657648640}
   MazeManager: {fileID: 0}
+  GMC: {fileID: 0}
   speed: 3
   gravity: 9.8
   bombRange: 1
@@ -351,6 +354,30 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2573073459345644431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3311268242657648646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c24de2bf349b9ba4a8b0d84f02485359, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2141645777786817482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3311268242657648646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 773d8c5823281cc4bb33a165925dc75f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3516569748208701537
 GameObject:
   m_ObjectHideFlags: 0

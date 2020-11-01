@@ -12,9 +12,7 @@ public class PlayerScript : MonoBehaviour
 
 
     public float speed = 5f;
-    public float gravity = 9.8f;
-    private float vForce = 0; // current vertical speed
-    public int bombRange = 3;
+    public int bombRange = 1;
     public int maxNumberOfBombs = 1;
     public int currentNumberOfBombs;
     public GameObject Bomb;
@@ -39,28 +37,14 @@ public class PlayerScript : MonoBehaviour
         gameOverScreen.SetActive(false);
         sound = GetComponent<AudioSource>();
     }
-
-    // Update is called once per frame
     void Update()
     {
-        float x = Input.GetAxis("Horizontal");
-        float z = Input.GetAxis("Vertical");
-        MovePlayer(x, z);
 
         if (Input.GetKeyDown(KeyCode.E) && currentNumberOfBombs > 0)
         {
             PlaceBomb();
         }
 
-    }
-
-    private void MovePlayer(float x, float z)
-    {
-        Vector3 move = transform.right * x +  transform.forward * z;
-        vForce -= gravity * Time.deltaTime;
-        move.y = vForce;
-
-        Controller.Move(move * speed * Time.deltaTime);
     }
 
     private void PlaceBomb()
